@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Pide la edad y si es mayor 
+    de 18 años indica que ya puede conducir. -->
+    <!-- <div class="card-body">
+        <h5 class="card-title">Apto para conducir</h5>
+        <label for="edad">Ingrese su edad</label>
+        <input type="number" id="edad" min="1" step="1" required>
+        <br><br>
+        
+        <button type="button" class="btn btn-primary" onclick="calcularEdad()">Aceptar</button>
+        <br>
+        <p>edad: <span id="edadFinal"></span></p>
+        <p>estado: <span id="estado"></span></p>
+    </div> -->
+
+    <!-- <div class="card-body">
+        <h5 class="card-title">Boleta de calificaciones</h5>
+        <label for="calif">Ingrese la calificacion</label>
+        <input type="number" id="calif" min="1" step="1" required>
+        <br><br>
+        
+        <button type="button" class="btn btn-primary" onclick="nota()">Aceptar</button>
+        <br>
+        <p>la nota es: <span id="notaFinal"></span></p>
+        <p>estado: <span id="estado"></span></p>
+   
+    </div> -->
+
+    <!-- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. 
+    Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -. -->
+    <!-- <div class="card" style="width: 400px;">
+        <div>
+            <h5 class="card-title">Texto</h5>
+            <label for="cad">Ingrese la cadena</label>
+            <input type="text" id="cad">
+            <br>
+            <button type="button" class="btn btn-primary" onclick="agregarTexto()">Aceptar</button>
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="mostrarTexto()">Mostrar</button>
+            <br>
+
+            <p>el texto es: <span id="text"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que pida números hasta que se pulse “cancelar”. 
+    Si no es un número deberá indicarse con un «alert» y seguir pidiendo. 
+    Al salir con “cancelar” deberá indicarse la suma total de los números introducidos. -->
+    <!-- <div class="card" style="width: 400px;">
+        <div>
+            <h5 class="card-title">Suma de numeros</h5>
+            <label for="cad">Ingrese un numero</label>
+            <input type="number" id="numero" min="1" required>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="agregarNumero()">Agregar</button>
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="mostrarNumero()">Mostrar</button>
+            <br>
+
+            <p>el total es de: <span id="totalNum"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Pide un número por teclado y dice si es par o impar -->
+    <!-- <div class="card" style="width: 400px;">
+        <div>
+            <h5 class="card-title">Par o Impar</h5>
+            <label for="num1">Ingrese un número</label>
+            <input type="number" id="num1" min="1">
+            <br>
+            <button type="button" class="btn btn-primary" onclick="agregarNumero()">Agregar</button>
+            <br><br>
+            <p>el numero es: <span id="numeroIdk"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor -->
+    <!-- <div class="card" style="width: 600px;">
+        <div>
+            <h5 class="card-title">IDK</h5>
+            <label for="nom1">Ingrese el primer nombre</label>
+            <input type="text" id="nom1"><br>
+            <label for="age1">Ingrese la edad</label>
+            <input type="number" id="age1">
+            <br><br>
+            <label for="nom2">Ingrese el segundo nombre</label>
+            <input type="text" id="nom2"><br>
+            <label for="age2">Ingrese la edad</label>
+            <input type="number" id="age2">
+            <br><br>
+            <label for="nom3">Ingrese el tercer nombre</label>
+            <input type="text" id="nom3"><br>
+            <label for="age3">Ingrese la edad</label>
+            <input type="number" id="age3">
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="agregarNombre()">Agregar</button>
+            <br><br>
+            <p>el nombre del mayor es: <span id="nomMayor"></span></p>
+        </div>
+    </div> -->
+
+    <!-- genere un número aleatorio entre 1 y 99 -->
+    <!-- <div class="card" style="width: 400px;">
+        <div>
+            <h5 class="card-title">numero random</h5>
+            <button type="button" class="btn btn-primary" onclick="agregarNumero()">Generar numero</button>
+            <br><br>
+            <p>el numero aleatorio es: <span id="numRandom"></span></p>
+        </div>
+    </div> -->
+    
+    <!-- generar 3 numeros aleatorios pero que no se repitan -->
+    <!-- <div class="card" style="width: 400px;">
+        <div>
+            <h5 class="card-title">numero random</h5>
+            <button type="button" class="btn btn-primary" onclick="agregarNumero()">Generar numeros</button>
+            <br><br>
+            <p>el primer numero aleatorio es: <span id="numRandom1"></span></p>
+            <p>el segundo numero aleatorio es: <span id="numRandom2"></span></p>
+            <p>el tercer numero aleatorio es: <span id="numRandom3"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que pida un texto y lo muestre en mayúsculas. -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Cambiar texto a mayusculas</h5>
+        <label for="textMay" style="width: 850px;">Ingrese un texto</label>
+        <input type="text" id="textMay">
+        <br><br>
+        <button  type="button" class="btn btn-primary" onclick="cambiarTexto()">cambiar texto</button>
+        <br>
+        <p>el texto normal es: <span id="textNor"></span></p>
+        <p>texto a MAYUSCULAS es: <span id="textMayus"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que pida una cadena de texto y 
+    la muestre poniendo el signo – entre cada carácter sin usar el método replace. -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">TEXTO separado</h5>
+        <label for="textChange" style="width: 850px;">Ingrese un texto:</label>
+        <input type="text" id="textChange">
+        <br><br>
+        <button  type="button" class="btn btn-primary" onclick="remplazarTexto()">cambiar texto</button>
+        <br>
+        <p>el texto normal es: <span id="textNor"></span></p>
+        <p>texto separado: <span id="textRep"></span></p>
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que cuente el número de vocales que tiene un texto. -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Contador de vocales</h5>
+        <label for="contTexto" style="width: 850px;">Ingrese un texto:</label>
+        <input type="text" id="contTexto">
+        <br><br>
+        <button  type="button" class="btn btn-primary" onclick="contTexto()">aceptar</button>
+        <br>
+        <p>el numero de vocales son: <span id="totalVocales"></span></p>
+        
+        </div>
+    </div> -->
+
+    <!-- Realiza un script que pida una cadena de texto y la devuelva al revés. -->
+
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">texto al reves</h5>
+        <label for="revTexto" style="width: 850px;">Ingrese un texto:</label>
+        <input type="text" id="revTexto">
+        <br><br>
+        <button  type="button" class="btn btn-primary" onclick="revTextoComp()">aceptar</button>
+        <br>
+        <p>el texto al reves es: <span id="allRevText"></span></p>
+        </div>
+    </div> -->
+    
+    <!-- realiza un script de una palabra es palindroma o no -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Texto palíndromo xd</h5>
+            <label for="palindromo" style="width: 850px;">Ingrese un texto:</label>
+            <input type="text" id="palindromo">
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="verificarPalindromo()">Aceptar</button>
+            <br>
+            <p>El texto es: <span id="final"></span></p>
+        </div>
+    </div> -->
+
+    <!-- realiza un script que me diga si la primer palabra es vocal o no -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Encuentra la primer vocal</h5>
+            <label for="findVocal" style="width: 850px;">Ingrese un texto:</label>
+            <input type="text" id="findVocal">
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="comienzaVocal()">Aceptar</button>
+            <br>
+            <p>¿el texto tiene vocal? y es: <span id="finalResult"></span></p>
+        </div>
+    </div> -->
+    
+    <!-- Realiza un script que muestre la serie de fibonacci hasta un número entre 1 y 100 pedido por teclado -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Serie de fibonaccio perro </h5>
+            <h5>el numero debe de ser entre 1 y 100 </h5>
+            <label for="serieFibo" style="width: 850px;">Ingrese un numero: </label>
+            <input type="number" id="serieFibo" min="1" required>
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="operacionFibo()">Aceptar</button>
+            <br>
+            <p>la serie es:  <span id="finalResult"></span></p>
+        </div>
+    </div> -->
+    
+    <!-- JUEGO DE PIEDRA, PAPEL O TIJERA -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Piedra, Papel o Tijera</h5>
+            <button type="button" onclick="empezarJuego()">Empezar Juego</button>
+            <button type="button" onclick="jugar('piedra')" id="piedra" disabled>Piedra</button>
+            <button type="button" onclick="jugar('papel')" id="papel" disabled>Papel</button>
+            <button type="button" onclick="jugar('tijera')" id="tijera" disabled>Tijera</button>
+            <br><br>
+            <p id="resultado"></p>
+            <p>Contador de partidas ganadas: <span id="contadorGanadas">0</span></p>
+            <p>Contador de partidas ganadas de computadora: <span id="contadorGanadasComputadora">0</span></p>
+            <button type="button" onclick="reiniciarContador()">Reiniciar <b>JUEGO</b></button>
+        </div>
+    </div> -->
+
+    <!-- obtener el valor de PI -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Obtener valor de PI </h5>
+            <h5>el numero debe de ser entre 1 y 100 </h5>
+            <button type="button" class="btn btn-primary" onclick="devolverPi()">Aceptar</button>
+            <br>
+            <p><span id="finalResult"></span></p>
+        </div>
+    </div>  -->
+
+    <!-- Crea una función que reciba 2 parámetros, precio e iva, 
+    y devuelva el precio con iva incluido. Si no recibe el iva, 
+    aplicará el 21 por ciento por defecto. -->
+    <!-- <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Supermercado El suku </h5>
+            <label for="precio" style="width: 850px;">Ingrese el precio: </label>
+            <input type="number" id="precio" min="1" required>
+            <br>
+            <label for="iva" style="width: 850px;">Ingrese el iva: </label>
+            <input type="number" id="iva" min="1" required>
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="calcular()">Aceptar</button>
+            <br>
+            <p>La subtotal es:  <span id="subtotal"></span></p>
+            <p>El total es:  <span id="total"></span></p>
+        </div>
+    </div> -->
+
+    
+    <div class="card" style="width: 500px;">
+        <div>
+            <h5 class="card-title">Relojería</h5>
+            <button id="obtenerHora" type="button" class="btn btn-primary" onclick="obtenerHora()">Dar la hora</button>
+            <button id="detenerHora" type="button" class="btn btn-primary" onclick="detenerHora()" disabled>Ocultar</button>
+            <br>
+            <p><span id="finalResult"></span></p>
+        </div>
+    </div>
+    
+    
+    <script>
+        let intervalID; // Variable para almacenar el ID del intervalo de actualización del reloj
+    
+        function formatoDosDigitos(num) {
+            return num < 10 ? "0" + num : num;
+        }
+    
+        function obtenerHora() {
+            // Habilitar el botón "Ocultar" y deshabilitar el botón "Dar la hora"
+            document.getElementById('obtenerHora').disabled = true;
+            document.getElementById('detenerHora').disabled = false;
+    
+            const ahora = new Date();
+    
+            // Obtener información de fecha y hora
+            const dia = formatoDosDigitos(ahora.getDate());
+            const mes = formatoDosDigitos(ahora.getMonth() + 1);
+            const anio = ahora.getFullYear();
+            const hora = formatoDosDigitos(ahora.getHours());
+            const minuto = formatoDosDigitos(ahora.getMinutes());
+            const segundo = formatoDosDigitos(ahora.getSeconds());
+    
+            // Actualizar el contenido del elemento con el reloj
+            const relojElemento = document.getElementById('finalResult');
+            relojElemento.textContent = `Fecha: ${dia}/${mes}/${anio} - Hora: ${hora}:${minuto}:${segundo}`;
+    
+            // Programar la próxima actualización en 1 segundo
+            intervalID = setTimeout(obtenerHora, 1000);
+        }
+    
+        function detenerHora() {
+            // Habilitar el botón "Dar la hora" y deshabilitar el botón "Ocultar"
+            document.getElementById('obtenerHora').disabled = false;
+            document.getElementById('detenerHora').disabled = true;
+    
+            // Limpiar el intervalo para detener la actualización del reloj
+            clearTimeout(intervalID);
+    
+            // Borrar el contenido del elemento con el reloj
+            const relojElemento = document.getElementById('finalResult');
+            relojElemento.textContent = '';
+        }
+    </script>
+    
+
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
